@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aarya Madurwar| Engineering Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- navigation -->
+  <header class="topbar">
+    <a href="#home" class="logo">aarya.</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- intro -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="small-note">Third-Year Engineering Student</p>
+      <h1>Aarya Madurwar</h1>
+      <p class="tagline">Engineering student focused on building practical software, from automated college timetables to career guidance for rural students.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn btn-fill">See my projects</a>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </div>
+    <figure class="photo-frame">
+      <img src="aarya.jpeg" alt="Aarya in a navy blazer and white shirt, smiling with arms crossed">
+    </figure>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="block">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <p>I'm in my third year of engineering. I am interested in problems where an algorithm can save people real time, which led me to use a genetic algorithm for timetable generation.</p>
+      <p>My second project addresses a different gap: rural students often choose a stream without guidance. I wanted to build a solution that works even on a weak network.</p>
+      <ul class="facts">
+        <li><b>Year:</b> 3rd year, Engineering</li>
+        <li><b>Interests:</b> AI, web, Android</li>
+        <li><b>Seeking:</b> Internship opportunities</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- skills: laid out like a timetable because of project 1 -->
+  <section id="skills" class="block">
+    <h2>Skills</h2>
+    <div class="timetable">
+      <div class="th">Languages</div>
+      <div class="th">Web</div>
+      <div class="th">AI / Algorithms</div>
+      <div class="th">Tools</div>
+
+      <div class="slot">Python</div>
+      <div class="slot">HTML</div>
+      <div class="slot">Genetic Algorithms</div>
+      <div class="slot">Git &amp; GitHub</div>
+
+      <div class="slot">Java</div>
+      <div class="slot">CSS</div>
+      <div class="slot">Machine Learning basics</div>
+      <div class="slot">Android Studio</div>
+
+      <div class="slot">C / C++</div>
+      <div class="slot">Responsive design</div>
+      <div class="slot">Chatbot design</div>
+      <div class="slot">VS Code</div>
+
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section id="projects" class="block">
+    <h2>Projects</h2>
+
+    <!-- carousel: pure CSS, driven by the radio buttons -->
+    <div class="carousel">
+      <input type="radio" name="slide" id="s1" checked aria-label="Project 1">
+      <input type="radio" name="slide" id="s2" aria-label="Project 2">
+
+      <div class="viewport">
+        <div class="track">
+          <article class="project">
+            <h3>Smart Gap Utilizer</h3>
+            <p class="project-sub">Automatic timetable generation using a Genetic Algorithm</p>
+            <p>A web-based timetable system for schools, colleges and institutes. It uses a Genetic Algorithm to generate optimized timetables automatically.</p>
+            <ul>
+              <li>Reduces gaps between lectures</li>
+              <li>Avoids faculty clashes</li>
+              <li>Uses classrooms efficiently</li>
+            </ul>
+            <span class="tag">Genetic Algorithm</span>
+            <span class="tag">Web app</span>
+          </article>
+
+          <article class="project">
+            <h3>NextGen Career</h3>
+            <p class="project-sub">AI career guidance for rural students</p>
+            <p>A low-bandwidth Android app and web portal that helps rural students choose the right stream and career. A short psychometric test feeds an AI engine that recommends streams and courses.</p>
+            <ul>
+              <li>Multilingual chatbot mentor for questions</li>
+              <li>Matching to colleges and scholarships</li>
+              <li>Works offline for low-connectivity areas</li>
+            </ul>
+            <span class="tag">Android</span>
+            <span class="tag">AI</span>
+            <span class="tag">Offline-first</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label for="s1" class="nav to-prev">&#8249; Previous</label>
+        <div class="dots">
+          <label for="s1" title="Project 1"></label>
+          <label for="s2" title="Project 2"></label>
+        </div>
+        <label for="s2" class="nav to-next">Next &#8250;</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="block">
+    <h2>Contact</h2>
+    <p class="sub">Open to internships and project collaborations. Please reach out through any of the links below.</p>
+    <ul class="contact-list">
+      <li><b>Email:</b> <a href="mailto:aaryamadurwar28@gmail.com">aaryamadurwar28@gmail.com</a></li>
+      <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/aarya-madurwar-a55005334?utm_source=share_via&utm_content=profile&utm_medium=member_android">linkedin</a></li>
+      <li><b>GitHub:</b> <a href="https://github.com/1828aarya">github</a></li>
+      <li><b>Phone:</b> +91 9421421910</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Aarya. Built with HTML and CSS.</p>
+  </footer>
+
+</body>
+</html>
